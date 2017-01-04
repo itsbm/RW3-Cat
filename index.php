@@ -1,9 +1,6 @@
 <html>
 <title><?php print 'Library Books'; ?></title>
-
-
 <?php
-
 //PHP7 script to allow public user interface with readerware mysql database
 
 $now = time();
