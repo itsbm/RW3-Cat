@@ -5,7 +5,7 @@ Since support was added for mysql, I realized the potential to allow users to in
 
 http://www.readerware.com/
 
-This is an independant project that supports Readerware by providing a public frontend so that others can view the contents of your library.
+This is an independent project that supports Readerware by providing a public frontend so that others can view the contents of your library.
 
 ## Contributing to the project
 
