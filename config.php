@@ -6,7 +6,9 @@
 $dbhost="localhost";
 $dbuser="dbuser";
 $dbpass="dbpass";
-$dbname="dbname";
+$dbbook="dbname";
+$dbvideo="dbname";
+$dbmusic="dbname";
 
 //-------------------------------------------
 
