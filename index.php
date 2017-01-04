@@ -5,15 +5,6 @@
 <?php
 
 //PHP7 script to allow public user interface with readerware mysql database
-// ENTER YOUR MYSQL INFORMATION HERE
-//----------------------------------------
-
-$dbhost="localhost";
-$dbuser="dbuser";
-$dbpass="dbpass";
-$dbname="dbname";
-
-//-------------------------------------------
 
 $now = time();
 
