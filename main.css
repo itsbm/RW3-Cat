@@ -1,0 +1,74 @@
+
+/*
+Theme Name: Default
+Theme URI: https://github.com/itsbm/RW3-CAT/
+Author: itsbm
+Author URI: 
+Description: RW3-Cat - Readerware Public Interface
+Version: alpha
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags:
+Text Domain:
+*/
+
+<style type="text/css">
+
+html    {
+        font-family: helvetica;
+        -webkit-text-size-adjust: 100%;
+        -ms-text-size-adjust: 100%;
+        }
+
+body    {
+        margin: 0;
+        }
+
+
+h2      {
+        font-family: helvetica;
+        }
+
+table   {
+        width: 90%;
+        border-spacing: 0px;
+        border: 1px solid black;
+        }
+
+table tr:nth-child(even){
+        background-color: #DDD;
+        padding: 5px;
+        }
+
+tr.header {
+        background-color: #333;
+        }
+
+th      {
+        font-family: Tahoma;
+        color: #FFF;
+        padding: 5px;
+        }
+
+td      {
+        padding: 5px;
+        border-bottom: 1px solid black;
+        border-top: 0px;
+        #border-left: 1px dashed grey;
+        border-right: 1px dashed grey;
+        }
+
+a:link  {
+        color: #FFF;
+        }
+
+a:visited {
+        color: #FFF;
+        }
+
+a:hover {
+        color: yellow;
+        }
+
+
+</style>
