@@ -54,13 +54,19 @@ if ($result->num_rows > 0) {
         //$rownum ++;
         //$altrow = ($rownum % 2 == 0)? 'white': '#ddd';
         //echo "<tr bgcolor='$altrow'>
-        echo "<tr>
-        <td width='30%'><b>".$row["TITLE"]."</b></td>
-        <td width='20%'><i>".$row["SORT_NAME"]."</i></td>
-        <td>".$row["PRODUCT_INFO"]."</td>
-        <td>".$row["RELEASE_DATE"]."</td>
+         echo "<tr>
+        <td width='30%'><b>
+                <div id='popup'>
+                <a class='anchor' name=".$row["ROWKEY"]."></a>
+                <a class='book' href='index.php?sort=".($_GET[sort])."#".$row["ROWKEY"]."'>".$row["TITLE"]."
+                <span><img src='data:image/jpeg;base64,".base64_encode($row["IMAGE1_DATA"])."'></span>
+                </div></b></td>
+        <td width='20%'><i>".$row["SORT_NAME"]."&nbsp</i></td>
+        <td>".$row["PRODUCT_INFO"]."&nbsp</td>
+        <td>".$row["RELEASE_DATE"]."&nbsp</td>
         <td>".$row["PAGES"]."</td>
         </tr>" ;
+
     }
     echo "</table></center>";
 } else {
