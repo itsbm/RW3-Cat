@@ -19,7 +19,7 @@ print date("l, F j Y \a\\t h:i a</center>", $now);
 echo "<br><hr>";
 
 // Create connection
-$conn = new mysqli($dbhost, $dbuser, $dbpass, $dbname);
+$conn = new mysqli($dbhost, $dbuser, $dbpass, $dbbook);
 // Check connection
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
