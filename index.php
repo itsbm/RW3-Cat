@@ -25,7 +25,7 @@ if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
 
-$sql = "SELECT r.TITLE, r.AUTHOR, r.RELEASE_DATE, r.PAGES, r.IMAGE1_DATA, r.PRODUCT_INFO, c.NAME, c.SORT_NAME FROM READERWARE AS r INNER JOIN CONTRIBUTOR AS c ON  r.AUTHOR = c.ROWKEY";
+$sql = "SELECT r.ROWKEY, r.TITLE, r.AUTHOR, r.RELEASE_DATE, r.PAGES, r.IMAGE1_DATA, r.PRODUCT_INFO, c.NAME, c.SORT_NAME FROM READERWARE AS r INNER JOIN CONTRIBUTOR AS c ON  r.AUTHOR = c.ROWKEY";
 
 if ($_GET['sort'] == 'title')
 { $sql .= " ORDER BY TITLE";
@@ -34,7 +34,6 @@ elseif ($_GET['sort'] == 'author')
 { $sql .= " ORDER BY SORT_NAME";
 }
 
-//$sql = "SELECT TITLE, AUTHOR, PAGES FROM READERWARE";
 $result = $conn->query($sql);
 
 if ($result->num_rows > 0) {
@@ -47,8 +46,6 @@ if ($result->num_rows > 0) {
         <th>PAGES</th>
         </tr>";
     // output data of each row
-
-//echo '<img src="data:image/jpeg;base64,'.base64_encode($row['IMAGE1_DATA']).'"/>'
 
     while($row = $result->fetch_assoc()) {
         //$rownum ++;
