@@ -48,10 +48,7 @@ if ($result->num_rows > 0) {
     // output data of each row
 
     while($row = $result->fetch_assoc()) {
-        //$rownum ++;
-        //$altrow = ($rownum % 2 == 0)? 'white': '#ddd';
-        //echo "<tr bgcolor='$altrow'>
-         echo "<tr>
+        echo "<tr>
         <td width='30%'><b>
                 <div id='popup'>
                 <a class='anchor' name=".$row["ROWKEY"]."></a>
