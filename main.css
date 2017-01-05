@@ -12,6 +12,7 @@ Tags:
 Text Domain:
 */
 
+
 <style type="text/css">
 
 html    {
@@ -58,6 +59,15 @@ td      {
         border-right: 1px dashed grey;
         }
 
+a:visited.book {
+        color: #000;
+        }
+
+a:link.book {
+        color: #000;
+        }
+
+
 a:link  {
         color: #FFF;
         }
@@ -70,5 +80,63 @@ a:hover {
         color: yellow;
         }
 
+#popup a.anchor{
+        position: relative;
+        top: -150px;
+        }
+
+/*HOVER POPUP LINKS*/
+
+#popup {
+        #color: #000;
+        #background-color: #c0c0c0;
+        }
+
+#popup a, #popup a:visited {
+        position: relative;
+        display: block;
+        #width: 130px;
+        #line-height: 30px;
+        #text-align: right;
+        padding: 0 10px;
+        margin: 0;
+        #border: 1px solid #666;
+        text-decoration: none;
+        font-size: 1em;
+        font-weight: bold;
+}
+
+#popup a span {
+        display: none;
+}
+
+
+#popup a:hover {
+        #background-color: #e9e9e2;
+}
+
+/* the IE correction rule */
+#popup a:hover  {
+        color: #f00;
+        background-color: #e9e9e2;
+        text-indent: 0; /* added the default value */
+}
+
+#popup a:hover span {
+        display: block;
+        position: absolute;
+        top: 0px;
+        left: 270px;
+        width: 200px;
+        margin: 0px;
+        padding: 10px;
+        color: #335500;
+        font-weight: normal;
+        #background: #e5e5e5;
+        text-align: left;
+        #border: 1px solid #666;
+}
+
+/*end of hover popup links*/
 
 </style>
