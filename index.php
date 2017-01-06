@@ -25,7 +25,7 @@ if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
 
-$sql = "SELECT r.ROWKEY, r.TITLE, r.AUTHOR, r.RELEASE_DATE, r.PAGES, r.IMAGE1_DATA, r.PRODUCT_INFO, c.NAME, c.SORT_NAME FROM READERWARE AS r INNER JOIN CONTRIBUTOR AS c ON  r.AUTHOR = c.ROWKEY";
+$sql = "SELECT r.ROWKEY, r.TITLE, r.AUTHOR, r.RELEASE_DATE, r.PAGES, r.IMAGE1_DATA, r.PRODUCT_INFO, c.NAME, c.SORT_NAME FROM READERWARE AS r INNER JOIN CONTRIBUTOR AS c ON  r.AUTHOR = c.ROWKEY WHERE r.STATUS = 1";
 
 if ($_GET['sort'] == 'title')
 { $sql .= " ORDER BY TITLE";
