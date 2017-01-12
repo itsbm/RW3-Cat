@@ -56,7 +56,7 @@ if ($result->num_rows > 0) {
                 <span><img src='data:image/jpeg;base64,".base64_encode($row["IMAGE1_DATA"])."'></span>
                 </div></b></td>
         <td width='20%'><i>".$row["SORT_NAME"]."&nbsp</i></td>
-        <td>".$row["PRODUCT_INFO"]."&nbsp</td>
+        <td>".substr($row["PRODUCT_INFO"],0,300 )."&nbsp</td>
         <td>".$row["RELEASE_DATE"]."&nbsp</td>
         <td>".$row["PAGES"]."</td>
         </tr>" ;
