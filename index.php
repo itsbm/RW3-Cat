@@ -52,7 +52,7 @@ if ($result->num_rows > 0) {
         <td width='30%'><b>
                 <div id='popup'>
                 <a class='anchor' name=".$row["ROWKEY"]."></a>
-                <a class='book' href='index.php?sort=".($_GET['sort'])."#".$row["ROWKEY"]."'>".$row["TITLE"]."
+                <a class='book' href='book.php?book=".$row["ROWKEY"]."'>".$row["TITLE"]."
                 <span><img src='data:image/jpeg;base64,".base64_encode($row["IMAGE1_DATA"])."'></span>
                 </div></b></td>
         <td width='20%'><i>".$row["SORT_NAME"]."&nbsp</i></td>
