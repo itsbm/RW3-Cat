@@ -49,6 +49,7 @@ th      {
         font-family: Tahoma;
         color: #FFF;
         padding: 5px;
+        border-right: 1px dashed white;
         }
 
 td      {
