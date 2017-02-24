@@ -10,7 +10,9 @@ This is an independent project that supports Readerware by providing a public fr
 ## Setup 
 
 Create your MySQL database and follow the instructions <a href="http://readerware.com/help/html/rw_hlp_db_jdbc.html">HERE</a> to configure Readerware to connect to it.
+
 Download the RW3-OPAC files to your website
+
 Edit the config.php file to reflect your settings
 
 ## Contributing to the project
