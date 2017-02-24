@@ -1,4 +1,4 @@
-# RW3-Cat
+# RW3-OPAC
 
 <a href="http://www.readerware.com">Readerware</a> is a great tool for managing small libraries. 
 Support was added for mysql and other databases in Readerware v.3, which allows an Online Public Access Catalog (OPAC) to be created for the library collection.
