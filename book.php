@@ -58,7 +58,7 @@ $result = $conn->query($sql);
         Last Updated: ".$row["DATE_LAST_UPDATED"]."&nbsp<br>
         Rating: ".$row["MY_RATING"]."&nbsp<br>
         Pages: ".$row["PAGES"]."&nbsp<br>
-        <b>Description:</b><br> ".$row["PRODUCT_INFO"]."&nbsp<br>
+        <b>Description:</b><br> ".nl2br($row["PRODUCT_INFO"])."&nbsp<br>
         </td>
         </tr></table></center>";
 }
