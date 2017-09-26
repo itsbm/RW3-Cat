@@ -5,7 +5,7 @@ Support was added for mysql and other databases in Readerware v.3, which allows 
 
 http://www.readerware.com/
 
-This is an independent project that supports Readerware by providing a public frontend so that others can view the contents of your library.
+This is an independent project that supports Readerware by providing a public frontend so that others can view the contents of your library on your website.
 
 ## Setup 
 
