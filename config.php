@@ -8,7 +8,7 @@ $dbuser="dbuser";
 $dbpass="dbpass";
 $dbbook="dbname";
 $dbvideo="dbname";
-$dbmusic="dbname";
+$dbaudio="dbname";
 
 $sitetitle="My Library";
 $sitename="My Library";
