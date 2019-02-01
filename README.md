@@ -7,7 +7,7 @@ http://www.readerware.com/
 
 This is an independent project that supports Readerware by providing a public frontend so that others can view the contents of your library on your website.
 
-Now updated: Feb 2019 - known issues: sort and links to authors other works are  currently broken.
+Now updated: Feb 2019 - known issues: sort and links to author's other works are currently broken.
   * Interfaces with books, dvd, and cd databases
   * Search to find keywords in Title, Author, or Description
   * Responsive design for easy access on mobile devices
