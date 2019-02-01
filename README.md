@@ -7,6 +7,11 @@ http://www.readerware.com/
 
 This is an independent project that supports Readerware by providing a public frontend so that others can view the contents of your library on your website.
 
+Now updated: Feb 2019
+  * Interfaces with books, dvd, and cds
+  * Search to find keywords in Title, Author, or Description
+  * Responsive design for easy access on mobile devices
+
 ## Setup 
 
 Create your MySQL database and follow the instructions <a href="http://readerware.com/help/html/rw_hlp_db_jdbc.html">HERE</a> to configure Readerware to connect to it.
