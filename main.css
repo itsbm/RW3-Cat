@@ -1,19 +1,51 @@
-
 /*
 Theme Name: Default
 Theme URI: https://github.com/itsbm/RW3-OPAC/
 Author: itsbm
-Author URI: 
-Description: RW3-OPAC - Readerware Online Public Access Catalog
-Version: alpha
+Author URI:
+Description:
+Version:
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Tags:
 Text Domain:
 */
 
-
 <style type="text/css">
+
+* {
+  box-sizing: border-box;
+}
+
+
+:root {
+        --colorheader: #00747c;
+        --colorbutton: #49627c;
+}
+
+
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+[class*="col-"] {
+  float: left;
+  padding: 1px;
+}
+
+/* For mobile phones: */
+[class*="col-"] {
+  width: 100%;
+}
+
+
+.rimage {
+  width: 100%;
+  height: auto;
+}
 
 html    {
         font-family: helvetica;
@@ -22,7 +54,11 @@ html    {
         }
 
 body    {
-        margin: 0;
+        margin: 10;
+        }
+
+.page   {
+        width: 400px;
         }
 
 
@@ -31,7 +67,7 @@ h2      {
         }
 
 table   {
-        width: 90%;
+        width: 100%;
         border-spacing: 0px;
         border: 1px solid black;
         }
@@ -43,6 +79,7 @@ table tr:nth-child(even){
 
 tr.header {
         background-color: #333;
+        font-size: 20px;
         }
 
 th      {
@@ -50,6 +87,7 @@ th      {
         color: #FFF;
         padding: 5px;
         border-right: 1px dashed white;
+
         }
 
 td      {
@@ -81,12 +119,30 @@ a:hover {
         color: yellow;
         }
 
+
+a:link.buttonl, a:visited.buttonl {
+  background-color: var(--colorbutton);
+  border-radius: 4px;
+  color: white;
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+
+
+
 #popup a.anchor{
         position: relative;
         top: -150px;
         }
 
+
+
 /*HOVER POPUP LINKS*/
+
+/*hoverpopups type 1*/
 
 #popup {
         #color: #000;
@@ -139,6 +195,166 @@ a:hover {
         #border: 1px solid #666;
 }
 
+
+
 /*end of hover popup links*/
+
+
+
+
+.headr {
+  background-color: var(--colorheader);
+  color: white;
+  width: 85%;
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+        }
+
+
+
+input[type=button], input[type=submit], input[type=reset] {
+  cursor: pointer;
+}
+
+
+.mo2 {width: 30%;}
+
+
+
+input[type=button], input[type=submit], input[type=reset] {
+  background-color: var(--colorbutton);
+  border: none;
+  border-radius: 4px;
+  color: white;
+  padding: 16px 32px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+  -webkit-appearance: none;
+  font-size: 15px;
+
+}
+
+
+
+input[type=text] {
+  width: 400px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  background-color: white;
+  background-image: url('searchicon.png');
+  background-position: 10px 10px;
+  background-repeat: no-repeat;
+  padding: 12px 20px 12px 40px;
+  -webkit-transition: width 0.4s ease-in-out;
+  transition: width 0.4s ease-in-out;
+}
+
+
+
+/*RESPONSIVE DISPLAY for small portable devices*/
+
+
+@media only screen and (max-width: 500px) {
+
+#popup a:hover span {   display: none; }
+
+
+.searchtext     { width: 95%; }
+
+a:link.buttonl, a:visited.buttonl {
+  background-color: var(--colorbutton);
+  border-radius: 4px;
+  color: white;
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.headr {
+  background-color: var(--colorheader);
+  color: white;
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+        }
+
+
+.m01 {display: none;}
+
+.mo2 {width: 60%;}
+
+
+input[type=button], input[type=submit], input[type=reset] {
+  background-color: var(--colorbutton);
+  border: none;
+  border-radius: 4px;
+  color: white;
+  padding: 16px 32px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+  -webkit-appearance: none;
+  font-size: 15px;
+
+}
+
+input[type=text] {
+  width: 60%;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  background-color: white;
+  background-image: url('searchicon.png');
+  background-position: 10px 10px;
+  background-repeat: no-repeat;
+  padding: 12px 20px 12px 40px;
+  -webkit-transition: width 0.4s ease-in-out;
+  transition: width 0.4s ease-in-out;
+}
+
+
+}
+
+
+/*end of Small Portable Devices*/
+
+@media only screen and (min-width: 600px) {
+  /* For tablets: */
+  .col-s-1 {width: 8.33%;}
+  .col-s-2 {width: 16.66%;}
+  .col-s-3 {width: 25%;}
+  .col-s-4 {width: 33.33%;}
+  .col-s-5 {width: 41.66%;}
+  .col-s-6 {width: 50%;}
+  .col-s-7 {width: 58.33%;}
+  .col-s-8 {width: 66.66%;}
+  .col-s-9 {width: 75%;}
+  .col-s-10 {width: 83.33%;}
+  .col-s-11 {width: 91.66%;}
+  .col-s-12 {width: 100%;}
+}
+@media only screen and (min-width: 768px) {
+  /* For desktop: */
+  .col-1 {width: 8.33%;}
+  .col-2 {width: 16.66%;}
+  .col-3 {width: 25%;}
+  .col-4 {width: 33.33%;}
+  .col-5 {width: 41.66%;}
+  .col-6 {width: 50%;}
+  .col-7 {width: 58.33%;}
+  .col-8 {width: 63%;}
+  .col-9 {width: 75%;}
+  .col-10 {width: 83.33%;}
+  .col-11 {width: 91.66%;}
+  .col-12 {width: 100%;}
+}
 
 </style>
